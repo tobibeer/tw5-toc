@@ -1,0 +1,23 @@
+title: $:/plugins/tobibeer/toc/readme
+
+The plugin $:/plugins/tobibeer/toc provides:
+
+; toc[]
+: a filter to fetch tiddlers in a toc
+
+; Operand
+: defines the root title
+: defaults to the value of `<<currentTiddler>>`
+
+; Suffixes
+: are declared as `name=<value>`...
+: `level=<number>`
+: `exclude=variableName`
+: `truncate=variableName`
+: `list=field-name`
+: `sort=field-name` ASC or `sort=!field-name` DESC
+
+<br>
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#toc

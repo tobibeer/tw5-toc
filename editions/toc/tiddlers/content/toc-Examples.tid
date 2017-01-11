@@ -1,0 +1,86 @@
+created: 20170111214112755
+creator: Tobias Beer
+modified: 20170111224612924
+modifier: Tobias Beer
+title: toc-Examples
+type: text/vnd.tiddlywiki
+
+The Examples are built around the following tagging- / list-hierarchies:
+
+<table class="noborder">
+<tr>
+<th>Tagging Via `tags` Field</th>
+<th>Listed Via `parents` Field</th>
+</tr>
+<tr>
+<td>
+
+* [[ToC]]
+** [[Foo]]
+*** [[Bar]]
+**** [[Baz]]
+***** [[Mumble]]
+***** [[Frotz]]
+***** [[Gronk]]
+
+</td>
+
+<td>
+
+* [[ToC]]
+** [[Mumble]]
+*** [[Frotz]]
+**** [[Gronk]]
+***** [[Foo]]
+***** [[Bar]]
+***** [[Baz]]
+</td>
+</tr>
+</table>
+
+<<` """{{{ [toc[ToC]] }}}""">>
+
+<<` """{{{ [toc:sort=title[ToC]] }}}""">>
+
+<<` """{{{ [toc:sort=!title[ToC]] }}}""">>
+
+<<` """{{{ [toc:level=1[ToC]] }}}""">>
+
+<<` """{{{ [toc:level=2[ToC]] }}}""">>
+
+<<` """<$vars X="Bar Baz">
+
+{{{ [toc:exclude=X[ToC]] }}}
+</$vars>""">>
+
+<<` """<$vars X="Baz">
+
+{{{ [toc:exclude=X[ToC]] }}}
+</$vars>""">>
+
+<<` """<$vars T="Bar Baz">
+
+{{{ [toc:truncate=T[ToC]] }}}
+</$vars>""">>
+
+<<` """<$vars T="Baz">
+
+{{{ [toc:truncate=T[ToC]] }}}
+</$vars>""">>
+
+<<` """{{{ [toc:list=parents[ToC]] }}}""">>
+
+<<` """{{{ [toc:list=parents sort=!title[ToC]] }}}""">>
+
+<<` """{{{ [toc:list=parents level=2[ToC]] }}}""">>
+
+<<` """<$vars X="Baz">
+
+{{{ [toc:list=parents exclude=X[ToC]] }}}
+</$vars>""">>
+
+<<` """<$vars T="Gronk">
+
+{{{ [toc:list=parents truncate=T[ToC]] }}}
+</$vars>""">>
+

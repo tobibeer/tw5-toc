@@ -1,0 +1,23 @@
+created: 20170111221636274
+creator: Tobias Beer
+modified: 20170111224511366
+modifier: Tobias Beer
+title: toc-Syntax
+type: text/vnd.tiddlywiki
+
+The ''toc'' filter allows to specify a ''root'' element for your <<tw "Table-of-Contents Macros" "table of contents">> in the <<tw Filters filter>> ''operand'', as well as a range of options in the ''suffix'':
+
+`toc:<suffix>[<operand>]`
+
+Both suffix and operand are optional. The default root element is the value of `<<currentTiddler>>` or `TableOfContents` when undefined.
+
+The ''toc'' filter supports the following suffixes that are declared as `name=<value>`, separated with spaces.
+
+| !Suffix | !Description | !Default |
+|''level''|the numeric level down to which the tree is calculated|`-1`<br>(none)|
+|''exclude''|a variable defining a filter of elements to be excluded| |
+|''truncate''|a variable defining a filter of elements to be truncated,<br>i.e. they are indexed but not further inspected for children| |
+|''list''|the field defining the tree, i.e. a tagging tree|`tags`|
+|''sort''|a field by which to sort the titles __for each level__ in ascending order<br>» prepend `!` to sort in descending order, e.g. `sort=!order`| |
+
+To see the available options in action, take a look at the [[examples|toc-Examples]].

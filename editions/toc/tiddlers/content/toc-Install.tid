@@ -1,0 +1,13 @@
+created: 20170111221616987
+creator: Tobias Beer
+modified: 20170111221618402
+modifier: Tobias Beer
+title: toc-Install
+type: text/vnd.tiddlywiki
+
+<<plugin-install toc>>
+
+!! Version History
+
+; 0.5.0 / 2017-01-11
+: initial version
