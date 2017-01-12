@@ -3,7 +3,7 @@ title: $:/plugins/tobibeer/toc/filter.js
 type: application/javascript
 module-type: filteroperator
 
-a filter to...
+A filter to fetch titles in a Table Of Contents
 
 @preserve
 \*/

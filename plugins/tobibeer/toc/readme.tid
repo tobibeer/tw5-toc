@@ -3,7 +3,7 @@ title: $:/plugins/tobibeer/toc/readme
 The plugin $:/plugins/tobibeer/toc provides:
 
 ; toc[]
-: a filter to fetch tiddlers in a toc
+: a filter to fetch titles in a ''Table of Contents''
 
 ; Operand
 : defines the root title
