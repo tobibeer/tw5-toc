@@ -10,4 +10,8 @@ The plugin $:/plugins/tobibeer/toc provides:
 ; toc[]
 : a filter to fetch tiddlers in a toc
 
+; Why?
+: for an index of all titles in a toc
+: to search in the context of titles in a toc only
+
 <<plugin-docs-cp toc>>
